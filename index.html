@@ -42,7 +42,7 @@
       <img src="https://i.imgur.com/ZqqvksR.jpg" alt="" class="smaller-image">
       <p><strong>Hi~我是吳雨茿</strong></p>
       <p>目前就讀於輔仁大學資訊工程學系二年級</p>
-      <p>興趣：看電影、畫畫、下西洋棋8</p>
+      <p>興趣：看電影、畫畫、下西洋棋5</p>
       <p><a href="https://github.com/Yu-Jhu-Wu">Click here for my GitHub profile</a></p>
       <p><b>聯絡方式:410261256@mail.fju.edu.tw</b></p>
       <p class="message box">
@@ -54,19 +54,17 @@
       </p>
       <div class="text active">
         <textarea name="area" cols="30" rows="10"></textarea>
-        <input type="submit" value="send it">
-        <input type="range" min="-10" max="10">
+        <button type="button" class="button2" id="sendIt">
+          送出
+        </button>
       </div>
-      <script language="javascript"> 
-        var range;
-        ranfe=confirm("您喜歡我的網頁嗎?");
-        if(range>=8)alert("非常感謝您的好評!!");
-        else alert("我還會再進步的!");
-        </script>
       <script>
         document.addEventListener('DOMContentLoaded', function(){
           document.getElementById('getMessage').onclick = function(){
             document.getElementsByClassName('message')[0].textContent="歡迎在下方寫下您想說的話";
+          }
+          document.getElementById('sendIt').onclick = function(){
+            document.getElementsByClassName('button2')[0].textContent="謝謝您的留言!";
           }
         });
         $(document).ready(function () {
