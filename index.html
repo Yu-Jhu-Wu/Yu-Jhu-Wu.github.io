@@ -13,7 +13,7 @@
       }
       .box {
         border-radius: 5px;
-        background-color: #eee;
+        background-color: rgb(123, 150, 238);
         padding: 20px 5px;
       }
       button {
@@ -42,10 +42,10 @@
       <p><a href="https://github.com/Yu-Jhu-Wu">Click here for my GitHub profile</a></p>
       <p><b>聯絡方式:410261256@mail.fju.edu.tw</b></p>
       <p class="message box">
-        The message will go here</p>
+        Please press the button down here,and you may see the message box.</p>
       <p>
         <button type="button" class="button" id="getMessage">
-          歡迎在此留言!!
+          按此即可留言!!
         </button>
       </p>
       <div class="text">
@@ -55,6 +55,7 @@
       <script>
         document.addEventListener('DOMContentLoaded', function(){
           document.getElementById('getMessage').onclick = function(){
+            document.getElementsByClassName('message')[0].textContent="歡迎在下方寫下您想說的話";
           }
         });
         $(document).ready(function () {
